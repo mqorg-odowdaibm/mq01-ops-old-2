@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: quickstart-cp4i
+  name: mq01
 spec:
   version: 9.3.3.0-r1
   license:
@@ -11,7 +11,8 @@ spec:
   web:
     enabled: true
   queueManager:
-    name: "QUICKSTART"
+    image: image-registry.openshift-image-registry.svc:5000/mq01-ci/mq01:0.0.1
+    name: "MQ01"
     storage:
       queueManager:
         type: ephemeral
