@@ -12,7 +12,7 @@ data:
     * SET CHLAUTH(MONITORING_CHL) TYPE(BLOCKUSER) USERLIST(NOBODY)
     REFRESH SECURITY TYPE(CONNAUTH)
     * optional
-    DEFINE SERVICE(APPLY_MQSC) CONTROL(QMGR) SERVTYPE(SERVER) STARTCMD('/mq-config/start-mqsc.sh') STARTARG(QM1) STOPCMD('/mq-config/start-mqsc.sh') STOPARG('') STDOUT('') STDERR('')
+    *DEFINE SERVICE(APPLY_MQSC) CONTROL(QMGR) SERVTYPE(SERVER) STARTCMD('/mq-config/start-mqsc.sh') STARTARG(QM1) STOPCMD('/mq-config/start-mqsc.sh') STOPARG('') STDOUT('') STDERR('')
 kind: ConfigMap
 metadata:
   creationTimestamp: null
