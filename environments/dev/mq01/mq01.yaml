@@ -52,7 +52,7 @@ spec:
       queueManager:
         type: ephemeral
       recoveryLogs:
-        enabled: false
+        enabled: true
   securityContext:
     initVolumeAsRoot: false
   template:
